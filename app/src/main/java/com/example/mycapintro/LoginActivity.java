@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(pText.length() < 4 || uText.length() > 20){
                     error2 = "Password should be 4-20 characters";
                     flag = 1;
-                    userWrap.setError(error2);
+                    passwrap.setError(error2);
                 }
 
                 if(flag == 0){

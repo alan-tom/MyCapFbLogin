@@ -36,6 +36,8 @@
                 android:textColorHint="@color/hint"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/SignUpFirstNameLayout"
                 app:boxBackgroundMode="outline"
                 app:boxStrokeColor="@color/colorPrimary"
                 android:layout_gravity="center">
@@ -57,9 +59,11 @@
                 android:textColorHint="@color/hint"
                 android:layout_marginTop="10dp"
                 app:boxBackgroundMode="outline"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
+                android:id="@+id/SignUpLastNameLayout"
                 app:boxStrokeColor="@color/colorPrimary"
-                android:layout_gravity="center">
+                >
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -78,6 +82,7 @@
             android:textColorHint="@color/hint"
             android:layout_marginTop="10dp"
             app:boxBackgroundMode="outline"
+            android:id="@+id/SignUpUsernameLayout"
             app:boxStrokeColor="@color/colorPrimary"
             android:layout_gravity="center">
             <EditText
@@ -97,6 +102,7 @@
             android:textColorHint="@color/hint"
             android:layout_marginTop="10dp"
             app:boxBackgroundMode="outline"
+            android:id="@+id/SignUpEmailLayout"
             app:boxStrokeColor="@color/colorPrimary"
             android:layout_gravity="center">
             <EditText
@@ -117,6 +123,7 @@
             android:layout_marginTop="10dp"
             app:boxBackgroundMode="outline"
             app:passwordToggleEnabled="true"
+            android:id="@+id/SignUpPasswordLayout"
             app:passwordToggleTint="@color/checked_text"
             app:boxStrokeColor="@color/colorPrimary"
             android:layout_gravity="center">
@@ -137,6 +144,7 @@
             android:textColorHint="@color/hint"
             android:layout_marginTop="10dp"
             app:boxBackgroundMode="outline"
+            android:id="@+id/SignUpRePasswordLayout"
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="@color/checked_text"
             app:boxStrokeColor="@color/colorPrimary"
@@ -158,48 +166,37 @@
             android:text="Date of Birth :"
             android:padding="10dp"
             android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateError"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/design_default_color_error"
+            android:padding="5dp"
+            android:visibility="gone"/>
         <DatePicker
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
             android:calendarViewShown="false"
-            android:tooltipText="Age"
+            android:id="@+id/SignUpDatePicker"
             android:datePickerMode="spinner"
             android:backgroundTint="@color/checked_text"
             android:calendarTextColor="@color/text"
             android:theme="@style/MyDatePicker" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:textColorHint="@color/hint"
-            android:layout_marginTop="10dp"
-            app:boxBackgroundMode="outline"
-            app:boxStrokeColor="@color/colorPrimary"
-            android:layout_gravity="center">
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Phone Number (Optional)"
-                android:paddingHorizontal="10dp"
-                android:inputType="number"
-                android:lines="1"
-                android:textColor="@color/text"
-                android:id="@+id/SignUpNumberId"/>
-        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
+            android:id="@+id/signUpButId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="25dp"
             android:layout_marginHorizontal="60dp"
-            android:padding="10dp"
-            android:id="@+id/signUpButId"
-            android:background="@drawable/rounded_button_color_primary"
+            android:layout_marginTop="25dp"
             android:layout_marginBottom="20dp"
-            android:text="@string/SignUp"/>
+            android:background="@drawable/rounded_button_color_primary"
+            android:padding="10dp"
+            android:text="@string/SignUp" />
     </LinearLayout>
 
 </ScrollView>
