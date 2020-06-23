@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyCapIntro</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="Logbutton">Login</string>
+    <string name="SignUp">Sign Up</string>
+</resources>
